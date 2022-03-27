@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Generator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      display: grid;
+      margin: 0px;
+      align-items: center;
+      background: rgb(29, 70, 117);
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .title {
+     
+      background: rgb(255, 255, 255);
+      font-size: 4rem;
+      margin: 3px;
+      padding: 3px;
+      border: 2px solid rgb(46, 207, 159);
+    }
+    
+    div.typer {
+      margin: 0 auto;
+    
+      font-size: 1.3rem;
+      background: rgb(255, 255, 255);
+      width: 500px;
+      padding: 1.7rem;
+      border-radius: 3px;
+      display: grid;
+      border: 2px solid rgb(46, 207, 159);
+    }
+
+    textarea {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+      width: 100%;
+      border: 2px solid rgb(46, 207, 159);
+      background: black;
+      color: rgb(163, 52, 148);
+      
+    }
+    
+    .result {
+      min-height: 10vh;
+      border: 2px solid rgb(46, 207, 159);;
+      background: black;
+      color: rgb(163, 52, 148);
+    }
+
+  </style>
+</head>
+
+<body>
+  <p class="title">Crazy Writer</p>
+  <div class="typer">
+    <textarea name="text">Enter text here and choose the style type below</textarea>
+    <label for="sarcastic">
+      <input type="radio" value="sarcastic" id="sarcastic" name="filter" checked><!-- the name attribute makes it so only one of a given name is selected -->
+      Sarcastic
+    </label>
+    <label for="funky">
+      <input type="radio" value="funky" id="funky" name="filter">
+      Funky
+    </label>
+    <label for="unable">
+      <input type="radio" value="unable" id="unable" name="filter">
+      Poor Writing
+    </label>
+    <label for="yelling">
+      <input type="radio" value="yelling" id="yelling" name="filter">
+      Yelling
+    </label>
+    <label for="weirdInternet">
+      <input type="radio" value="weirdInternet" id="weirdInternet" name="filter">
+      W3!rd !nt3rn3t
+    </label>
+    <p class="result"></p>
+  </div>
+
+  <script src="./text.js"></script>
+</body>
+
+</html>
